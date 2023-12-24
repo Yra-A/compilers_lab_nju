@@ -14,5 +14,8 @@ public class Main
         String source = args[0];
         CharStream input = CharStreams.fromFileName(source);
         SysYLexer sysYLexer = new SysYLexer(input);
+        sysYLexer.removeErrorListeners();
+        sysYLexer.addErrorListener(myErrorListener);
+        sysYLexer.getAllTokens();
     }
 }

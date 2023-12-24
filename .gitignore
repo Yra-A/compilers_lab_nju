@@ -1,14 +1,29 @@
-/src/*
-!/src/*.java
-!/src/*.g4
-/src/*Lexer.java
-/src/*Parser.java 
-/src/*ParserBaseListener.java
-/src/*ParserBaseVisitor.java
-/src/*ParserListener.java
-/src/*ParserVisitor.java
-/classes
+### IntelliJ IDEA ###
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
 .DS_Store
-/out
-/.idea
-/Lab.iml
