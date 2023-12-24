@@ -31,7 +31,7 @@ public class Main
                     }
                 }
             }
-            System.err.printf("%d %s at Line %d", token.getType(), text, token.getLine());
+            System.err.printf("%d %s at Line %d\n", token.getType(), text, token.getLine());
         }
     }
 }
