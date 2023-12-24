@@ -31,7 +31,7 @@ public class Main
                     }
                 }
             }
-            String typeStr = SysYLexer.VOCABULARY.getLiteralName(token.getType());
+            String typeStr = SysYLexer.VOCABULARY.getSymbolicName(token.getType());
             System.err.printf("%s %s at Line %d\n.", typeStr, text, token.getLine());
         }
     }
