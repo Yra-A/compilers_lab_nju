@@ -24,6 +24,6 @@ class myErrorListener extends BaseErrorListener
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
             String msg, RecognitionException e)
     {
-        System.err.printf("Error type A at Line %d:%s", line, msg);
+        System.out.printf("Error type A at Line %d:%s", line, msg);
     }
 }
