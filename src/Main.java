@@ -24,7 +24,6 @@ public class Main
 
         for (Token token : tokens) {
             String text = token.getText();
-            System.out.println("!!!!!!!!!" + SysYLexer.VOCABULARY.getSymbolicName(token.getType()) + text);
             if (token.getType() == SysYLexer.INTEGER_CONST) {
                 if (text.length() > 1) {
                     if (text.startsWith("0x") || text.startsWith("0X")) {
