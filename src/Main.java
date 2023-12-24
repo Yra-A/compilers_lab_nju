@@ -16,6 +16,12 @@ public class Main
         myErrorListener myErrorListener = new myErrorListener();
         sysYLexer.addErrorListener(myErrorListener);
         List<Token> tokens = (List<Token>) sysYLexer.getAllTokens();
+
+        // 如果出现错误就不输出token
+        if (myErrorListener.hasError()) {
+            return;
+        }
+
         for (Token token : tokens) {
             String text = token.getText();
             if (token.getType() == SysYLexer.INTEGER_CONST) {
@@ -42,10 +48,16 @@ public class Main
 
 class myErrorListener extends BaseErrorListener
 {
+    private boolean hasError = false;
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
             String msg, RecognitionException e)
     {
+        hasError = true;
         System.err.printf("Error type A at Line %d:%s", line, msg);
+    }
+
+    public boolean hasError() {
+        return hasError;
     }
 }
