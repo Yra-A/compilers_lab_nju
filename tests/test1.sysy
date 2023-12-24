@@ -1,8 +1,1 @@
-int main()
-{
-   // line comment
-   /*
-     block comment
-   */
-   int i = 0xf;
-}
+int 2i = 08;
