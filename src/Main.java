@@ -21,7 +21,6 @@ public class Main
         if (myErrorListener.hasError()) {
             return;
         }
-
         for (Token token : tokens) {
             String text = token.getText();
             if (token.getType() == SysYLexer.INTEGER_CONST) {
