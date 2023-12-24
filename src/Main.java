@@ -1,7 +1,6 @@
 import java.io.IOException;
-import org.antlr.v4.runtime.CharStream;
-import org.antlr.v4.runtime.CharStreams;
-import org.antlr.v4.runtime.CommonTokenStream;
+
+import org.antlr.v4.runtime.*;
 
 public class Main
 {
@@ -13,7 +12,18 @@ public class Main
         CharStream input = CharStreams.fromFileName(source);
         SysYLexer sysYLexer = new SysYLexer(input);
         sysYLexer.removeErrorListeners();
-//        sysYLexer.addErrorListener(myErrorListener);
+        myErrorListener myErrorListener = new myErrorListener();
+        sysYLexer.addErrorListener(myErrorListener);
         sysYLexer.getAllTokens();
+    }
+}
+
+class myErrorListener extends BaseErrorListener
+{
+    @Override
+    public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
+            String msg, RecognitionException e)
+    {
+        System.err.printf("Error type A at Line %d:%s", line, msg);
     }
 }
