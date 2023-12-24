@@ -1,8 +1,0 @@
-INT int at Line 1.
-INTEGER_CONST 2 at Line 1.
-IDENT i at Line 1.
-ASSIGN = at Line 1.
-Exception in thread "main" java.lang.NumberFormatException: For input string: "" under radix 16
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67)
-	at java.base/java.lang.Integer.parseInt(Integer.java:671)
-	at Main.main(Main.java:32)
