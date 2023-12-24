@@ -41,7 +41,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.Main">
+  <component name="RunManager" selected="Makefile 目标.compile">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Lab" />
@@ -69,10 +69,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
         <item itemvalue="Makefile 目标.compile" />
         <item itemvalue="Makefile 目标.run" />
         <item itemvalue="Makefile 目标.antlr" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +93,7 @@
       <workItem from="1703405229758" duration="358000" />
       <workItem from="1703405803839" duration="465000" />
       <workItem from="1703406278666" duration="464000" />
-      <workItem from="1703406753267" duration="343000" />
+      <workItem from="1703406753267" duration="437000" />
     </task>
     <servers />
   </component>
