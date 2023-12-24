@@ -1,23 +1,16 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import 
 
 public class Main
 {
-    public static void main(String[] args){
-        if (args.length != 1) {
-            System.err.println("can't find the command!");
-            System.exit(1);
+    public static void main(String[] args) throws IOException {
+        if (args.length < 1) {
+            System.err.println("input path is required");
         }
-
-        try (BufferedReader br = new BufferedReader(new FileReader(args[0]))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.err.println("Error when reading the file: " + e.getMessage());
-            System.exit(2);
-        }
+        String source = args[0];
+        CharStream input = CharStreams.fromFileName(source);
+        SysYLexer sysYLexer = new SysYLexer(input);
     }
 }
