@@ -32,7 +32,7 @@ public class Main
                 }
             }
             String typeStr = SysYLexer.VOCABULARY.getSymbolicName(token.getType());
-            if (token.getType() == SysYLexer.LINE_COMMENT || token.getType() == SysYLexer.WS) {
+            if (token.getType() == SysYLexer.LINE_COMMENT || token.getType() == SysYLexer.WS || token.getType() == SysYLexer.MULTILINE_COMMENT) {
                 continue;
             }
             System.err.printf("%s %s at Line %d.\n", typeStr, text, token.getLine());
