@@ -13,7 +13,7 @@ public class Main
         CharStream input = CharStreams.fromFileName(source);
         SysYLexer sysYLexer = new SysYLexer(input);
         sysYLexer.removeErrorListeners();
-        sysYLexer.addErrorListener(myErrorListener);
+//        sysYLexer.addErrorListener(myErrorListener);
         sysYLexer.getAllTokens();
     }
 }
