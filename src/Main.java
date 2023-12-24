@@ -31,7 +31,8 @@ public class Main
                     }
                 }
             }
-            System.err.printf("%d %s at Line %d\n", token.getType(), text, token.getLine());
+            String typeStr = SysYLexer.VOCABULARY.getSymbolicName(token.getType());
+            System.err.printf("%s %s at Line %d\n.", typeStr, text, token.getLine());
         }
     }
 }
