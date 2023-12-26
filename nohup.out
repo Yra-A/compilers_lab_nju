@@ -19,3 +19,6 @@ int main() {
 
 0
 Error type A at Line 1:no viable alternative at input 'int 'program
+22!!!!!!!!!!!!
+0
+Error type A at Line 5:mismatched input '<EOF>' expecting {'const', 'int', 'void'}program

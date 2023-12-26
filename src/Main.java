@@ -15,9 +15,7 @@ public class Main {
         String source = args[0];
         CharStream input = CharStreams.fromFileName(source);
         SysYLexer sysYLexer = new SysYLexer(input);
-        System.err.println(sysYLexer.getAllTokens().size() + "!!!!!!!!!!!!");
         CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
-        System.err.println(tokens.getTokens().size());
         SysYParser sysYParser = new SysYParser(tokens);
 
         sysYParser.removeErrorListeners();
@@ -25,6 +23,7 @@ public class Main {
         sysYParser.addErrorListener(myErrorListener);
 
         ParseTree tree = sysYParser.program();
+        System.err.println("????????????!@#!@#!@#");
         if (myErrorListener.hasError()) {
             Visitor visitor = new Visitor(sysYLexer);
             visitor.visit(tree);
