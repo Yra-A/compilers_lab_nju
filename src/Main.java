@@ -19,6 +19,8 @@ public class Main {
         CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
         SysYParser sysYParser = new SysYParser(tokens);
 
+        sysYParser.compUnit();
+
         System.err.println(tokens.getTokens().size());
         for (Token token : tokens.getTokens()) {
             System.err.printf("\n???????????[%s]\n", token.getText());
@@ -27,7 +29,7 @@ public class Main {
         myErrorListener myErrorListener = new myErrorListener();
         sysYParser.addErrorListener(myErrorListener);
 
-        ParseTree tree = sysYParser.program();
+        ParseTree tree = sysYParser.compUnit();
             Visitor visitor = new Visitor(sysYLexer);
             visitor.visit(tree);
     }
