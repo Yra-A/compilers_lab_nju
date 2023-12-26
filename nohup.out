@@ -5,3 +5,10 @@ Error type A at Line 1:no viable alternative at input 'int 'program
 Error type A at Line 1:no viable alternative at input 'int 'program
 0
 Error type A at Line 1:no viable alternative at input 'int 'program
+int main() {
+    int a=0;
+    return a;
+}
+
+0
+Error type A at Line 1:no viable alternative at input 'int 'program
