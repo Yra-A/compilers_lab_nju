@@ -6,34 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="90bcde10-b90b-47a3-8edd-8650aeedb8fe" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$BTypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$BTypeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$BlockContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$BlockItemContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$BlockItemContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$CompUnitContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$CompUnitContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$CondContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$CondContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ConstDeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ConstDeclContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ConstDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ConstDefContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ConstExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ConstExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ConstInitValContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ConstInitValContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$DeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$DeclContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ExpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ExpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$FuncDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$FuncDefContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$FuncFParamContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$FuncFParamContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$FuncFParamsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$FuncFParamsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$FuncRParamsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$FuncRParamsContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$FuncTypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$FuncTypeContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$InitValContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$InitValContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$LValContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$LValContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$NumberContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$NumberContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ParamContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ParamContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$ProgramContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$StmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$StmtContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$UnaryOpContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$UnaryOpContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$VarDeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$VarDeclContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser$VarDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser$VarDefContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/SysYParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SysYParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.g4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +117,7 @@
       <workItem from="1703406278666" duration="464000" />
       <workItem from="1703406753267" duration="11148000" />
       <workItem from="1703586267151" duration="7500000" />
-      <workItem from="1703604989217" duration="2123000" />
+      <workItem from="1703604989217" duration="2147000" />
     </task>
     <servers />
   </component>
