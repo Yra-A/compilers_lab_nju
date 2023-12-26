@@ -19,16 +19,15 @@ public class Main {
         CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
         SysYParser sysYParser = new SysYParser(tokens);
 
-        sysYParser.compUnit();
-
-        System.err.println(tokens.getTokens().size());
         sysYParser.removeErrorListeners();
         myErrorListener myErrorListener = new myErrorListener();
         sysYParser.addErrorListener(myErrorListener);
 
         ParseTree tree = sysYParser.compUnit();
+        if (myErrorListener.hasError()) {
             Visitor visitor = new Visitor(sysYLexer);
             visitor.visit(tree);
+        }
     }
 }
 
