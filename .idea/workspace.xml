@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90bcde10-b90b-47a3-8edd-8650aeedb8fe" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nohup.out" beforeDir="false" afterPath="$PROJECT_DIR$/nohup.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test1.sysy" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test1.sysy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.g4" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
