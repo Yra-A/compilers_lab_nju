@@ -17,7 +17,9 @@ public class Main {
 
         SysYLexer sysYLexer = new SysYLexer(input);
         CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
-
+        for (Token token : tokens.getTokens()) {
+            System.err.printf("[%s]\n", token.getText());
+        }
         SysYParser sysYParser = new SysYParser(tokens);
         sysYParser.removeErrorListeners();
         myErrorListener myErrorListener = new myErrorListener();
