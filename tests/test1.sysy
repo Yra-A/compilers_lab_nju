@@ -1,1 +1,4 @@
-int 2i = 0x;
+int main(){
+    int a[];
+    return a][;
+}
