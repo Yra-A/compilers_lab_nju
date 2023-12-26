@@ -22,9 +22,6 @@ public class Main {
         sysYParser.compUnit();
 
         System.err.println(tokens.getTokens().size());
-        for (Token token : tokens.getTokens()) {
-            System.err.printf("\n???????????[%s]\n", token.getText());
-        }
         sysYParser.removeErrorListeners();
         myErrorListener myErrorListener = new myErrorListener();
         sysYParser.addErrorListener(myErrorListener);
