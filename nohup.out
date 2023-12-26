@@ -1,0 +1,6 @@
+int main() {
+    int a=0;
+    return a;
+}
+
+Error type A at Line 1:no viable alternative at input 'int 'compUnit
