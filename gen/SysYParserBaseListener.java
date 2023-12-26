@@ -1,4 +1,4 @@
-// Generated from ./src/SysYParser.g4 by ANTLR 4.9.1
+// Generated from /Users/yra/Desktop/Compilers/Lab/src/SysYParser.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -9,6 +9,7 @@ import org.antlr.v4.runtime.tree.TerminalNode;
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
+@SuppressWarnings("CheckReturnValue")
 public class SysYParserBaseListener implements SysYParserListener {
 	/**
 	 * {@inheritDoc}
@@ -250,18 +251,6 @@ public class SysYParserBaseListener implements SysYParserListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitLVal(SysYParser.LValContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterPrimaryExp(SysYParser.PrimaryExpContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitPrimaryExp(SysYParser.PrimaryExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

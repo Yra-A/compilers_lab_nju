@@ -1,4 +1,4 @@
-// Generated from ./src/SysYParser.g4 by ANTLR 4.9.1
+// Generated from /Users/yra/Desktop/Compilers/Lab/src/SysYParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -206,16 +206,6 @@ public interface SysYParserListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitLVal(SysYParser.LValContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link SysYParser#primaryExp}.
-	 * @param ctx the parse tree
-	 */
-	void enterPrimaryExp(SysYParser.PrimaryExpContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link SysYParser#primaryExp}.
-	 * @param ctx the parse tree
-	 */
-	void exitPrimaryExp(SysYParser.PrimaryExpContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link SysYParser#number}.
 	 * @param ctx the parse tree

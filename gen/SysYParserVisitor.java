@@ -1,4 +1,4 @@
-// Generated from ./src/SysYParser.g4 by ANTLR 4.9.1
+// Generated from /Users/yra/Desktop/Compilers/Lab/src/SysYParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
@@ -129,12 +129,6 @@ public interface SysYParserVisitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitLVal(SysYParser.LValContext ctx);
-	/**
-	 * Visit a parse tree produced by {@link SysYParser#primaryExp}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitPrimaryExp(SysYParser.PrimaryExpContext ctx);
 	/**
 	 * Visit a parse tree produced by {@link SysYParser#number}.
 	 * @param ctx the parse tree

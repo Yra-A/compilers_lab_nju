@@ -21,7 +21,7 @@ public class Main {
         sysYParser.removeErrorListeners();
         myErrorListener myErrorListener = new myErrorListener();
         sysYParser.addErrorListener(myErrorListener);
-        System.err.println(sysYLexer.getAllTokens().size() + "??????????");
+
         ParseTree tree = sysYParser.program();
         if (myErrorListener.hasError()) {
             Visitor visitor = new Visitor(sysYLexer);

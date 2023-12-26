@@ -1,4 +1,4 @@
-// Generated from ./src/SysYParser.g4 by ANTLR 4.9.1
+// Generated from /Users/yra/Desktop/Compilers/Lab/src/SysYParser.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
 
 /**
@@ -9,6 +9,7 @@ import org.antlr.v4.runtime.tree.AbstractParseTreeVisitor;
  * @param <T> The return type of the visit operation. Use {@link Void} for
  * operations with no return type.
  */
+@SuppressWarnings("CheckReturnValue")
 public class SysYParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements SysYParserVisitor<T> {
 	/**
 	 * {@inheritDoc}
@@ -150,13 +151,6 @@ public class SysYParserBaseVisitor<T> extends AbstractParseTreeVisitor<T> implem
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
 	@Override public T visitLVal(SysYParser.LValContext ctx) { return visitChildren(ctx); }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation returns the result of calling
-	 * {@link #visitChildren} on {@code ctx}.</p>
-	 */
-	@Override public T visitPrimaryExp(SysYParser.PrimaryExpContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
