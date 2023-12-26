@@ -14,23 +14,21 @@ public class Main {
         }
         String source = args[0];
         CharStream input = CharStreams.fromFileName(source);
-        System.err.println(input.toString());
         SysYLexer sysYLexer = new SysYLexer(input);
+        System.err.println(sysYLexer.getAllTokens().size() + "!!!!!!!!!!!!");
         CommonTokenStream tokens = new CommonTokenStream(sysYLexer);
-        SysYParser sysYParser = new SysYParser(tokens);
-        
-
         System.err.println(tokens.getTokens().size());
-        for (Token token : tokens.getTokens()) {
-            System.err.printf("\n???????????[%s]\n", token.getText());
-        }
+        SysYParser sysYParser = new SysYParser(tokens);
+
         sysYParser.removeErrorListeners();
         myErrorListener myErrorListener = new myErrorListener();
         sysYParser.addErrorListener(myErrorListener);
 
         ParseTree tree = sysYParser.program();
+        if (myErrorListener.hasError()) {
             Visitor visitor = new Visitor(sysYLexer);
             visitor.visit(tree);
+        }
     }
 }
 
