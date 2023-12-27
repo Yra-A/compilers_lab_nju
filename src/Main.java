@@ -95,7 +95,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
             String text = token.getText();
 
             printIndent();
-            System.err.printf("%s %s[%s]\n", text, SysYLexer.ruleNames[type], highlightColors[type]);
+            System.err.printf("%s %s[%s]-", text, SysYLexer.ruleNames[type], highlightColors[type]);
         }
         return null;
     }
