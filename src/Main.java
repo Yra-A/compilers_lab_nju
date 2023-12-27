@@ -59,6 +59,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         for (int i = 0; i < indent; i++) {
             System.out.print("  ");
         }
+        return null;
     }
 
     @Override
