@@ -90,6 +90,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
                 return null;
             }
             String text = token.getText();
+            printIndent();
             System.err.printf("%s[%s]\n", text, highlightColors[type]);
         }
         return null;
