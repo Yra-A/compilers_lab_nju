@@ -3,257 +3,257 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
  * This interface defines a complete listener for a parse tree produced by
- * {@link SysYParser}.
+ * {@link SysYParserParser}.
  */
 public interface SysYParserListener extends ParseTreeListener {
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#program}.
+	 * Enter a parse tree produced by {@link SysYParserParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void enterProgram(SysYParser.ProgramContext ctx);
+	void enterProgram(SysYParserParser.ProgramContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#program}.
+	 * Exit a parse tree produced by {@link SysYParserParser#program}.
 	 * @param ctx the parse tree
 	 */
-	void exitProgram(SysYParser.ProgramContext ctx);
+	void exitProgram(SysYParserParser.ProgramContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#compUnit}.
+	 * Enter a parse tree produced by {@link SysYParserParser#compUnit}.
 	 * @param ctx the parse tree
 	 */
-	void enterCompUnit(SysYParser.CompUnitContext ctx);
+	void enterCompUnit(SysYParserParser.CompUnitContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#compUnit}.
+	 * Exit a parse tree produced by {@link SysYParserParser#compUnit}.
 	 * @param ctx the parse tree
 	 */
-	void exitCompUnit(SysYParser.CompUnitContext ctx);
+	void exitCompUnit(SysYParserParser.CompUnitContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#decl}.
+	 * Enter a parse tree produced by {@link SysYParserParser#decl}.
 	 * @param ctx the parse tree
 	 */
-	void enterDecl(SysYParser.DeclContext ctx);
+	void enterDecl(SysYParserParser.DeclContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#decl}.
+	 * Exit a parse tree produced by {@link SysYParserParser#decl}.
 	 * @param ctx the parse tree
 	 */
-	void exitDecl(SysYParser.DeclContext ctx);
+	void exitDecl(SysYParserParser.DeclContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#constDecl}.
+	 * Enter a parse tree produced by {@link SysYParserParser#constDecl}.
 	 * @param ctx the parse tree
 	 */
-	void enterConstDecl(SysYParser.ConstDeclContext ctx);
+	void enterConstDecl(SysYParserParser.ConstDeclContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#constDecl}.
+	 * Exit a parse tree produced by {@link SysYParserParser#constDecl}.
 	 * @param ctx the parse tree
 	 */
-	void exitConstDecl(SysYParser.ConstDeclContext ctx);
+	void exitConstDecl(SysYParserParser.ConstDeclContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#bType}.
+	 * Enter a parse tree produced by {@link SysYParserParser#bType}.
 	 * @param ctx the parse tree
 	 */
-	void enterBType(SysYParser.BTypeContext ctx);
+	void enterBType(SysYParserParser.BTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#bType}.
+	 * Exit a parse tree produced by {@link SysYParserParser#bType}.
 	 * @param ctx the parse tree
 	 */
-	void exitBType(SysYParser.BTypeContext ctx);
+	void exitBType(SysYParserParser.BTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#constDef}.
+	 * Enter a parse tree produced by {@link SysYParserParser#constDef}.
 	 * @param ctx the parse tree
 	 */
-	void enterConstDef(SysYParser.ConstDefContext ctx);
+	void enterConstDef(SysYParserParser.ConstDefContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#constDef}.
+	 * Exit a parse tree produced by {@link SysYParserParser#constDef}.
 	 * @param ctx the parse tree
 	 */
-	void exitConstDef(SysYParser.ConstDefContext ctx);
+	void exitConstDef(SysYParserParser.ConstDefContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#constInitVal}.
+	 * Enter a parse tree produced by {@link SysYParserParser#constInitVal}.
 	 * @param ctx the parse tree
 	 */
-	void enterConstInitVal(SysYParser.ConstInitValContext ctx);
+	void enterConstInitVal(SysYParserParser.ConstInitValContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#constInitVal}.
+	 * Exit a parse tree produced by {@link SysYParserParser#constInitVal}.
 	 * @param ctx the parse tree
 	 */
-	void exitConstInitVal(SysYParser.ConstInitValContext ctx);
+	void exitConstInitVal(SysYParserParser.ConstInitValContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#varDecl}.
+	 * Enter a parse tree produced by {@link SysYParserParser#varDecl}.
 	 * @param ctx the parse tree
 	 */
-	void enterVarDecl(SysYParser.VarDeclContext ctx);
+	void enterVarDecl(SysYParserParser.VarDeclContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#varDecl}.
+	 * Exit a parse tree produced by {@link SysYParserParser#varDecl}.
 	 * @param ctx the parse tree
 	 */
-	void exitVarDecl(SysYParser.VarDeclContext ctx);
+	void exitVarDecl(SysYParserParser.VarDeclContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#varDef}.
+	 * Enter a parse tree produced by {@link SysYParserParser#varDef}.
 	 * @param ctx the parse tree
 	 */
-	void enterVarDef(SysYParser.VarDefContext ctx);
+	void enterVarDef(SysYParserParser.VarDefContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#varDef}.
+	 * Exit a parse tree produced by {@link SysYParserParser#varDef}.
 	 * @param ctx the parse tree
 	 */
-	void exitVarDef(SysYParser.VarDefContext ctx);
+	void exitVarDef(SysYParserParser.VarDefContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#initVal}.
+	 * Enter a parse tree produced by {@link SysYParserParser#initVal}.
 	 * @param ctx the parse tree
 	 */
-	void enterInitVal(SysYParser.InitValContext ctx);
+	void enterInitVal(SysYParserParser.InitValContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#initVal}.
+	 * Exit a parse tree produced by {@link SysYParserParser#initVal}.
 	 * @param ctx the parse tree
 	 */
-	void exitInitVal(SysYParser.InitValContext ctx);
+	void exitInitVal(SysYParserParser.InitValContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#funcDef}.
+	 * Enter a parse tree produced by {@link SysYParserParser#funcDef}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncDef(SysYParser.FuncDefContext ctx);
+	void enterFuncDef(SysYParserParser.FuncDefContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#funcDef}.
+	 * Exit a parse tree produced by {@link SysYParserParser#funcDef}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncDef(SysYParser.FuncDefContext ctx);
+	void exitFuncDef(SysYParserParser.FuncDefContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#funcType}.
+	 * Enter a parse tree produced by {@link SysYParserParser#funcType}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncType(SysYParser.FuncTypeContext ctx);
+	void enterFuncType(SysYParserParser.FuncTypeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#funcType}.
+	 * Exit a parse tree produced by {@link SysYParserParser#funcType}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncType(SysYParser.FuncTypeContext ctx);
+	void exitFuncType(SysYParserParser.FuncTypeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#funcFParams}.
+	 * Enter a parse tree produced by {@link SysYParserParser#funcFParams}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncFParams(SysYParser.FuncFParamsContext ctx);
+	void enterFuncFParams(SysYParserParser.FuncFParamsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#funcFParams}.
+	 * Exit a parse tree produced by {@link SysYParserParser#funcFParams}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncFParams(SysYParser.FuncFParamsContext ctx);
+	void exitFuncFParams(SysYParserParser.FuncFParamsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#funcFParam}.
+	 * Enter a parse tree produced by {@link SysYParserParser#funcFParam}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncFParam(SysYParser.FuncFParamContext ctx);
+	void enterFuncFParam(SysYParserParser.FuncFParamContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#funcFParam}.
+	 * Exit a parse tree produced by {@link SysYParserParser#funcFParam}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncFParam(SysYParser.FuncFParamContext ctx);
+	void exitFuncFParam(SysYParserParser.FuncFParamContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#block}.
+	 * Enter a parse tree produced by {@link SysYParserParser#block}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlock(SysYParser.BlockContext ctx);
+	void enterBlock(SysYParserParser.BlockContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#block}.
+	 * Exit a parse tree produced by {@link SysYParserParser#block}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlock(SysYParser.BlockContext ctx);
+	void exitBlock(SysYParserParser.BlockContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#blockItem}.
+	 * Enter a parse tree produced by {@link SysYParserParser#blockItem}.
 	 * @param ctx the parse tree
 	 */
-	void enterBlockItem(SysYParser.BlockItemContext ctx);
+	void enterBlockItem(SysYParserParser.BlockItemContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#blockItem}.
+	 * Exit a parse tree produced by {@link SysYParserParser#blockItem}.
 	 * @param ctx the parse tree
 	 */
-	void exitBlockItem(SysYParser.BlockItemContext ctx);
+	void exitBlockItem(SysYParserParser.BlockItemContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#stmt}.
+	 * Enter a parse tree produced by {@link SysYParserParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void enterStmt(SysYParser.StmtContext ctx);
+	void enterStmt(SysYParserParser.StmtContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#stmt}.
+	 * Exit a parse tree produced by {@link SysYParserParser#stmt}.
 	 * @param ctx the parse tree
 	 */
-	void exitStmt(SysYParser.StmtContext ctx);
+	void exitStmt(SysYParserParser.StmtContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#exp}.
+	 * Enter a parse tree produced by {@link SysYParserParser#exp}.
 	 * @param ctx the parse tree
 	 */
-	void enterExp(SysYParser.ExpContext ctx);
+	void enterExp(SysYParserParser.ExpContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#exp}.
+	 * Exit a parse tree produced by {@link SysYParserParser#exp}.
 	 * @param ctx the parse tree
 	 */
-	void exitExp(SysYParser.ExpContext ctx);
+	void exitExp(SysYParserParser.ExpContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#cond}.
+	 * Enter a parse tree produced by {@link SysYParserParser#cond}.
 	 * @param ctx the parse tree
 	 */
-	void enterCond(SysYParser.CondContext ctx);
+	void enterCond(SysYParserParser.CondContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#cond}.
+	 * Exit a parse tree produced by {@link SysYParserParser#cond}.
 	 * @param ctx the parse tree
 	 */
-	void exitCond(SysYParser.CondContext ctx);
+	void exitCond(SysYParserParser.CondContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#lVal}.
+	 * Enter a parse tree produced by {@link SysYParserParser#lVal}.
 	 * @param ctx the parse tree
 	 */
-	void enterLVal(SysYParser.LValContext ctx);
+	void enterLVal(SysYParserParser.LValContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#lVal}.
+	 * Exit a parse tree produced by {@link SysYParserParser#lVal}.
 	 * @param ctx the parse tree
 	 */
-	void exitLVal(SysYParser.LValContext ctx);
+	void exitLVal(SysYParserParser.LValContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#number}.
+	 * Enter a parse tree produced by {@link SysYParserParser#number}.
 	 * @param ctx the parse tree
 	 */
-	void enterNumber(SysYParser.NumberContext ctx);
+	void enterNumber(SysYParserParser.NumberContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#number}.
+	 * Exit a parse tree produced by {@link SysYParserParser#number}.
 	 * @param ctx the parse tree
 	 */
-	void exitNumber(SysYParser.NumberContext ctx);
+	void exitNumber(SysYParserParser.NumberContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#unaryOp}.
+	 * Enter a parse tree produced by {@link SysYParserParser#unaryOp}.
 	 * @param ctx the parse tree
 	 */
-	void enterUnaryOp(SysYParser.UnaryOpContext ctx);
+	void enterUnaryOp(SysYParserParser.UnaryOpContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#unaryOp}.
+	 * Exit a parse tree produced by {@link SysYParserParser#unaryOp}.
 	 * @param ctx the parse tree
 	 */
-	void exitUnaryOp(SysYParser.UnaryOpContext ctx);
+	void exitUnaryOp(SysYParserParser.UnaryOpContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#funcRParams}.
+	 * Enter a parse tree produced by {@link SysYParserParser#funcRParams}.
 	 * @param ctx the parse tree
 	 */
-	void enterFuncRParams(SysYParser.FuncRParamsContext ctx);
+	void enterFuncRParams(SysYParserParser.FuncRParamsContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#funcRParams}.
+	 * Exit a parse tree produced by {@link SysYParserParser#funcRParams}.
 	 * @param ctx the parse tree
 	 */
-	void exitFuncRParams(SysYParser.FuncRParamsContext ctx);
+	void exitFuncRParams(SysYParserParser.FuncRParamsContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#param}.
+	 * Enter a parse tree produced by {@link SysYParserParser#param}.
 	 * @param ctx the parse tree
 	 */
-	void enterParam(SysYParser.ParamContext ctx);
+	void enterParam(SysYParserParser.ParamContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#param}.
+	 * Exit a parse tree produced by {@link SysYParserParser#param}.
 	 * @param ctx the parse tree
 	 */
-	void exitParam(SysYParser.ParamContext ctx);
+	void exitParam(SysYParserParser.ParamContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link SysYParser#constExp}.
+	 * Enter a parse tree produced by {@link SysYParserParser#constExp}.
 	 * @param ctx the parse tree
 	 */
-	void enterConstExp(SysYParser.ConstExpContext ctx);
+	void enterConstExp(SysYParserParser.ConstExpContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link SysYParser#constExp}.
+	 * Exit a parse tree produced by {@link SysYParserParser#constExp}.
 	 * @param ctx the parse tree
 	 */
-	void exitConstExp(SysYParser.ConstExpContext ctx);
+	void exitConstExp(SysYParserParser.ConstExpContext ctx);
 }

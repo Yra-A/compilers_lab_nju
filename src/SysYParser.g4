@@ -1,8 +1,6 @@
-parser grammar SysYParser;
+grammar SysYParser;
 
-options {
-    tokenVocab = SysYLexer;
-}
+import SysYLexer;
 
 program
    : compUnit

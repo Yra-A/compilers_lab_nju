@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90bcde10-b90b-47a3-8edd-8650aeedb8fe" name="更改" comment="" />
+    <list default="true" id="90bcde10-b90b-47a3-8edd-8650aeedb8fe" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/SysYLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/SysYLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYLexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYLexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParser.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParser.interp" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParser.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParser.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParserBaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParserBaseListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParserBaseVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParserBaseVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParserListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParserListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYParserVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYParserVisitor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
