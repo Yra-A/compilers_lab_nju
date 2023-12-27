@@ -72,7 +72,6 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         indent += 2;
         ruleName = ruleName.substring(0, 1).toUpperCase() + ruleName.substring(1);
         System.err.println(ruleName); // 打印正在访问的规则名称
-
         Void result = this.defaultResult();
         int n = node.getChildCount();
         for(int i = 0; i < n && this.shouldVisitNextChild(node, result); ++i) {
