@@ -37,7 +37,7 @@ class MyErrorParserListener extends BaseErrorListener {
             String msg, RecognitionException e)
     {
         hasError = true;
-        System.err.printf("Error type A at Line %d:%s\n", line, msg);
+        System.err.printf("Error type B at Line %d:%s\n", line, msg);
     }
 
     public boolean hasError() {
