@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90bcde10-b90b-47a3-8edd-8650aeedb8fe" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SysYLexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/SysYLexer.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SysYLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/SysYLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/SysYLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gen/SysYLexer.tokens" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

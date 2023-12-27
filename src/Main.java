@@ -26,11 +26,6 @@ public class Main
             if (token.getType() == SysYLexer.INTEGER_CONST) {
                 if (text.length() > 1) {
                     if (text.startsWith("0x") || text.startsWith("0X")) {
-                        if (text.length() == 2) {
-                            System.err.printf("%s %s at Line %d.\n", SysYLexer.VOCABULARY.getSymbolicName(SysYLexer.INTEGER_CONST), text.charAt(0), token.getLine());
-                            System.err.printf("%s %s at Line %d.\n", SysYLexer.VOCABULARY.getSymbolicName(SysYLexer.IDENT), text.charAt(1), token.getLine());
-                            continue;
-                        }
                         // 十六进制
                         text = text.substring(2);
                         text = String.valueOf(Integer.parseInt(text, 16));
