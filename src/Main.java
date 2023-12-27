@@ -48,17 +48,36 @@ class MyErrorParserListener extends BaseErrorListener {
 class Visitor extends SysYParserBaseVisitor<Void> {
 
     private String[] highlightColors;
+    private int indent = 0;
 
     public Visitor(SysYLexer sysYLexer) {
         super();
         getHighlightColor(sysYLexer);
     }
 
+    private Void printIndent() {
+        for (int i = 0; i < indent; i++) {
+            System.out.print("  ");
+        }
+    }
+
     @Override
     public Void visitChildren(RuleNode node) {
         String ruleName = SysYParser.ruleNames[node.getRuleContext().getRuleIndex()];
+        printIndent();
+        indent += 2;
+
         System.err.println(ruleName); // 打印正在访问的规则名称
-        return super.visitChildren(node);
+
+        Void result = this.defaultResult();
+        int n = node.getChildCount();
+        for(int i = 0; i < n && this.shouldVisitNextChild(node, result); ++i) {
+            ParseTree c = node.getChild(i);
+            Void childResult = c.accept(this);
+            result = this.aggregateResult(result, childResult);
+        }
+        indent -= 2;
+        return result;
     }
 
     @Override
@@ -66,6 +85,9 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         Token token = node.getSymbol();
         if (token != null) {
             int type = token.getType();
+            if (type >= highlightColors.length || highlightColors[type] == null) {
+                return null
+            }
             String text = token.getText();
             System.err.printf("%s[%s]\n", text, highlightColors[type]);
         }
