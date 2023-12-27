@@ -57,14 +57,14 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     @Override
     public Void visitChildren(RuleNode node) {
         String ruleName = SysYParser.ruleNames[node.getRuleContext().getRuleIndex()];
-        System.err.println(ruleName); // 打印正在访问的规则名称
+
+        System.err.println(ruleName + "!!!!!!!!!!!!!!!!!!!!"); // 打印正在访问的规则名称
         return null;
     }
 
     @Override
     public Void visitTerminal(TerminalNode node) {
         Token token = node.getSymbol();
-        System.err.println("!!!!!!!!!!!!!!" + token.getText());
         if (token != null) {
             int type = token.getType();
             String text = token.getText();
