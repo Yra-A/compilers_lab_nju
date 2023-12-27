@@ -67,7 +67,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         if (token != null) {
             int type = token.getType();
             String text = token.getText();
-            System.err.printf("[%s]\n", highlightColors[type]);
+            System.err.printf("%s[%s]\n", text, highlightColors[type]);
         }
         return null;
     }
