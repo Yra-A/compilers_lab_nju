@@ -87,6 +87,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     @Override
     public Void visitTerminal(TerminalNode node) {
         Token token = node.getSymbol();
+        System.err.println(token.getText() + token + "!!!!!!!!!!!!!!!!!!!!!!!!");
         if (token != null) {
             int type = token.getType() - 1;
             if (type < 0 || type >= highlightColors.length || highlightColors[type] == null) {
@@ -94,9 +95,6 @@ class Visitor extends SysYParserBaseVisitor<Void> {
             }
             String text = token.getText();
             printIndent();
-            if (text.equals("<EOF>")) {
-                return null;
-            }
             System.err.printf("%s %s[%s]\n", text, SysYLexer.ruleNames[type], highlightColors[type]);
         }
         return null;
