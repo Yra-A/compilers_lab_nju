@@ -3,160 +3,160 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
 
 /**
  * This interface defines a complete generic visitor for a parse tree produced
- * by {@link SysYParserParser}.
+ * by {@link SysYParser}.
  *
  * @param <T> The return type of the visit operation. Use {@link Void} for
  * operations with no return type.
  */
 public interface SysYParserVisitor<T> extends ParseTreeVisitor<T> {
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#program}.
+	 * Visit a parse tree produced by {@link SysYParser#program}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitProgram(SysYParserParser.ProgramContext ctx);
+	T visitProgram(SysYParser.ProgramContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#compUnit}.
+	 * Visit a parse tree produced by {@link SysYParser#compUnit}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitCompUnit(SysYParserParser.CompUnitContext ctx);
+	T visitCompUnit(SysYParser.CompUnitContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#decl}.
+	 * Visit a parse tree produced by {@link SysYParser#decl}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitDecl(SysYParserParser.DeclContext ctx);
+	T visitDecl(SysYParser.DeclContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#constDecl}.
+	 * Visit a parse tree produced by {@link SysYParser#constDecl}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitConstDecl(SysYParserParser.ConstDeclContext ctx);
+	T visitConstDecl(SysYParser.ConstDeclContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#bType}.
+	 * Visit a parse tree produced by {@link SysYParser#bType}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBType(SysYParserParser.BTypeContext ctx);
+	T visitBType(SysYParser.BTypeContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#constDef}.
+	 * Visit a parse tree produced by {@link SysYParser#constDef}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitConstDef(SysYParserParser.ConstDefContext ctx);
+	T visitConstDef(SysYParser.ConstDefContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#constInitVal}.
+	 * Visit a parse tree produced by {@link SysYParser#constInitVal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitConstInitVal(SysYParserParser.ConstInitValContext ctx);
+	T visitConstInitVal(SysYParser.ConstInitValContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#varDecl}.
+	 * Visit a parse tree produced by {@link SysYParser#varDecl}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitVarDecl(SysYParserParser.VarDeclContext ctx);
+	T visitVarDecl(SysYParser.VarDeclContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#varDef}.
+	 * Visit a parse tree produced by {@link SysYParser#varDef}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitVarDef(SysYParserParser.VarDefContext ctx);
+	T visitVarDef(SysYParser.VarDefContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#initVal}.
+	 * Visit a parse tree produced by {@link SysYParser#initVal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitInitVal(SysYParserParser.InitValContext ctx);
+	T visitInitVal(SysYParser.InitValContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#funcDef}.
+	 * Visit a parse tree produced by {@link SysYParser#funcDef}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncDef(SysYParserParser.FuncDefContext ctx);
+	T visitFuncDef(SysYParser.FuncDefContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#funcType}.
+	 * Visit a parse tree produced by {@link SysYParser#funcType}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncType(SysYParserParser.FuncTypeContext ctx);
+	T visitFuncType(SysYParser.FuncTypeContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#funcFParams}.
+	 * Visit a parse tree produced by {@link SysYParser#funcFParams}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncFParams(SysYParserParser.FuncFParamsContext ctx);
+	T visitFuncFParams(SysYParser.FuncFParamsContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#funcFParam}.
+	 * Visit a parse tree produced by {@link SysYParser#funcFParam}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncFParam(SysYParserParser.FuncFParamContext ctx);
+	T visitFuncFParam(SysYParser.FuncFParamContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#block}.
+	 * Visit a parse tree produced by {@link SysYParser#block}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlock(SysYParserParser.BlockContext ctx);
+	T visitBlock(SysYParser.BlockContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#blockItem}.
+	 * Visit a parse tree produced by {@link SysYParser#blockItem}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitBlockItem(SysYParserParser.BlockItemContext ctx);
+	T visitBlockItem(SysYParser.BlockItemContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#stmt}.
+	 * Visit a parse tree produced by {@link SysYParser#stmt}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitStmt(SysYParserParser.StmtContext ctx);
+	T visitStmt(SysYParser.StmtContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#exp}.
+	 * Visit a parse tree produced by {@link SysYParser#exp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitExp(SysYParserParser.ExpContext ctx);
+	T visitExp(SysYParser.ExpContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#cond}.
+	 * Visit a parse tree produced by {@link SysYParser#cond}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitCond(SysYParserParser.CondContext ctx);
+	T visitCond(SysYParser.CondContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#lVal}.
+	 * Visit a parse tree produced by {@link SysYParser#lVal}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitLVal(SysYParserParser.LValContext ctx);
+	T visitLVal(SysYParser.LValContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#number}.
+	 * Visit a parse tree produced by {@link SysYParser#number}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitNumber(SysYParserParser.NumberContext ctx);
+	T visitNumber(SysYParser.NumberContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#unaryOp}.
+	 * Visit a parse tree produced by {@link SysYParser#unaryOp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitUnaryOp(SysYParserParser.UnaryOpContext ctx);
+	T visitUnaryOp(SysYParser.UnaryOpContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#funcRParams}.
+	 * Visit a parse tree produced by {@link SysYParser#funcRParams}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitFuncRParams(SysYParserParser.FuncRParamsContext ctx);
+	T visitFuncRParams(SysYParser.FuncRParamsContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#param}.
+	 * Visit a parse tree produced by {@link SysYParser#param}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitParam(SysYParserParser.ParamContext ctx);
+	T visitParam(SysYParser.ParamContext ctx);
 	/**
-	 * Visit a parse tree produced by {@link SysYParserParser#constExp}.
+	 * Visit a parse tree produced by {@link SysYParser#constExp}.
 	 * @param ctx the parse tree
 	 * @return the visitor result
 	 */
-	T visitConstExp(SysYParserParser.ConstExpContext ctx);
+	T visitConstExp(SysYParser.ConstExpContext ctx);
 }

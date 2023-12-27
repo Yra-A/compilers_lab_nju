@@ -1,315 +1,316 @@
-// Generated from ./src/SysYParser.g4 by ANTLR 4.9.1
+// Generated from /Users/yra/Desktop/Compilers/Lab/src/SysYLexer.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
 
 /**
- * This class provides an empty implementation of {@link SysYParserListener},
+ * This class provides an empty implementation of {@link SysYLexerListener},
  * which can be extended to create a listener which only needs to handle a subset
  * of the available methods.
  */
-public class SysYParserBaseListener implements SysYParserListener {
+@SuppressWarnings("CheckReturnValue")
+public class SysYLexerBaseListener implements SysYLexerListener {
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProgram(SysYParser.ProgramContext ctx) { }
+	@Override public void enterProgram(SysYLexerParser.ProgramContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitProgram(SysYParser.ProgramContext ctx) { }
+	@Override public void exitProgram(SysYLexerParser.ProgramContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCompUnit(SysYParser.CompUnitContext ctx) { }
+	@Override public void enterCompUnit(SysYLexerParser.CompUnitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCompUnit(SysYParser.CompUnitContext ctx) { }
+	@Override public void exitCompUnit(SysYLexerParser.CompUnitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDecl(SysYParser.DeclContext ctx) { }
+	@Override public void enterDecl(SysYLexerParser.DeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDecl(SysYParser.DeclContext ctx) { }
+	@Override public void exitDecl(SysYLexerParser.DeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstDecl(SysYParser.ConstDeclContext ctx) { }
+	@Override public void enterConstDecl(SysYLexerParser.ConstDeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstDecl(SysYParser.ConstDeclContext ctx) { }
+	@Override public void exitConstDecl(SysYLexerParser.ConstDeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBType(SysYParser.BTypeContext ctx) { }
+	@Override public void enterBType(SysYLexerParser.BTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBType(SysYParser.BTypeContext ctx) { }
+	@Override public void exitBType(SysYLexerParser.BTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstDef(SysYParser.ConstDefContext ctx) { }
+	@Override public void enterConstDef(SysYLexerParser.ConstDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstDef(SysYParser.ConstDefContext ctx) { }
+	@Override public void exitConstDef(SysYLexerParser.ConstDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstInitVal(SysYParser.ConstInitValContext ctx) { }
+	@Override public void enterConstInitVal(SysYLexerParser.ConstInitValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstInitVal(SysYParser.ConstInitValContext ctx) { }
+	@Override public void exitConstInitVal(SysYLexerParser.ConstInitValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVarDecl(SysYParser.VarDeclContext ctx) { }
+	@Override public void enterVarDecl(SysYLexerParser.VarDeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVarDecl(SysYParser.VarDeclContext ctx) { }
+	@Override public void exitVarDecl(SysYLexerParser.VarDeclContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterVarDef(SysYParser.VarDefContext ctx) { }
+	@Override public void enterVarDef(SysYLexerParser.VarDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitVarDef(SysYParser.VarDefContext ctx) { }
+	@Override public void exitVarDef(SysYLexerParser.VarDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInitVal(SysYParser.InitValContext ctx) { }
+	@Override public void enterInitVal(SysYLexerParser.InitValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInitVal(SysYParser.InitValContext ctx) { }
+	@Override public void exitInitVal(SysYLexerParser.InitValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncDef(SysYParser.FuncDefContext ctx) { }
+	@Override public void enterFuncDef(SysYLexerParser.FuncDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncDef(SysYParser.FuncDefContext ctx) { }
+	@Override public void exitFuncDef(SysYLexerParser.FuncDefContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncType(SysYParser.FuncTypeContext ctx) { }
+	@Override public void enterFuncType(SysYLexerParser.FuncTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncType(SysYParser.FuncTypeContext ctx) { }
+	@Override public void exitFuncType(SysYLexerParser.FuncTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncFParams(SysYParser.FuncFParamsContext ctx) { }
+	@Override public void enterFuncFParams(SysYLexerParser.FuncFParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncFParams(SysYParser.FuncFParamsContext ctx) { }
+	@Override public void exitFuncFParams(SysYLexerParser.FuncFParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncFParam(SysYParser.FuncFParamContext ctx) { }
+	@Override public void enterFuncFParam(SysYLexerParser.FuncFParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncFParam(SysYParser.FuncFParamContext ctx) { }
+	@Override public void exitFuncFParam(SysYLexerParser.FuncFParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlock(SysYParser.BlockContext ctx) { }
+	@Override public void enterBlock(SysYLexerParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlock(SysYParser.BlockContext ctx) { }
+	@Override public void exitBlock(SysYLexerParser.BlockContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterBlockItem(SysYParser.BlockItemContext ctx) { }
+	@Override public void enterBlockItem(SysYLexerParser.BlockItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitBlockItem(SysYParser.BlockItemContext ctx) { }
+	@Override public void exitBlockItem(SysYLexerParser.BlockItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStmt(SysYParser.StmtContext ctx) { }
+	@Override public void enterStmt(SysYLexerParser.StmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStmt(SysYParser.StmtContext ctx) { }
+	@Override public void exitStmt(SysYLexerParser.StmtContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExp(SysYParser.ExpContext ctx) { }
+	@Override public void enterExp(SysYLexerParser.ExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExp(SysYParser.ExpContext ctx) { }
+	@Override public void exitExp(SysYLexerParser.ExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCond(SysYParser.CondContext ctx) { }
+	@Override public void enterCond(SysYLexerParser.CondContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCond(SysYParser.CondContext ctx) { }
+	@Override public void exitCond(SysYLexerParser.CondContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLVal(SysYParser.LValContext ctx) { }
+	@Override public void enterLVal(SysYLexerParser.LValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLVal(SysYParser.LValContext ctx) { }
+	@Override public void exitLVal(SysYLexerParser.LValContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNumber(SysYParser.NumberContext ctx) { }
+	@Override public void enterNumber(SysYLexerParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNumber(SysYParser.NumberContext ctx) { }
+	@Override public void exitNumber(SysYLexerParser.NumberContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUnaryOp(SysYParser.UnaryOpContext ctx) { }
+	@Override public void enterUnaryOp(SysYLexerParser.UnaryOpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUnaryOp(SysYParser.UnaryOpContext ctx) { }
+	@Override public void exitUnaryOp(SysYLexerParser.UnaryOpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFuncRParams(SysYParser.FuncRParamsContext ctx) { }
+	@Override public void enterFuncRParams(SysYLexerParser.FuncRParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFuncRParams(SysYParser.FuncRParamsContext ctx) { }
+	@Override public void exitFuncRParams(SysYLexerParser.FuncRParamsContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParam(SysYParser.ParamContext ctx) { }
+	@Override public void enterParam(SysYLexerParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParam(SysYParser.ParamContext ctx) { }
+	@Override public void exitParam(SysYLexerParser.ParamContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConstExp(SysYParser.ConstExpContext ctx) { }
+	@Override public void enterConstExp(SysYLexerParser.ConstExpContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConstExp(SysYParser.ConstExpContext ctx) { }
+	@Override public void exitConstExp(SysYLexerParser.ConstExpContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

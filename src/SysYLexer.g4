@@ -64,18 +64,16 @@ COMMA : ',';
 
 SEMICOLON : ';';
 
-// 以下划线或字母开头，仅包含下划线、英文字母大小写、阿拉伯数字
 IDENT : (LETTER | '_') WORD*;
 
-// 数字常量，包含十进制数，0开头的八进制数，0x或0X开头的十六进制数
 INTEGER_CONST : ('0' | ([1-9] DIGIT*)) | ('0' OCT+) | (('0x' | '0X') HEX+);
 
 
-WS : [ \r\n\t]+;
+WS : [ \r\n\t]+ -> skip;
 
-LINE_COMMENT : '//' .*? '\n';
+LINE_COMMENT : '//' .*? '\n' -> skip;
 
-MULTILINE_COMMENT : '/*' .*? '*/';
+MULTILINE_COMMENT : '/*' .*? '*/'  -> skip;
 
 fragment LETTER : [a-zA-Z] ;
 fragment DIGIT : [0-9] ;
