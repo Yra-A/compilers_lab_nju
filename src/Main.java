@@ -64,6 +64,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     @Override
     public Void visitTerminal(TerminalNode node) {
         Token token = node.getSymbol();
+        System.err.println("!!!!!!!!!!!!!!" + token.getText());
         if (token != null) {
             int type = token.getType();
             String text = token.getText();
