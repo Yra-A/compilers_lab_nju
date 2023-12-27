@@ -89,7 +89,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         Token token = node.getSymbol();
         if (token != null) {
             int type = token.getType() - 1;
-            if (type >= highlightColors.length || highlightColors[type] == null) {
+            if (type < 0 || type >= highlightColors.length || highlightColors[type] == null) {
                 return null;
             }
             String text = token.getText();

@@ -1,0 +1,39 @@
+program
+  compUnit
+    funcDef
+      funcType
+        int INT[orange]
+      main IDENT[red]
+      block
+        blockItem
+          decl
+            varDecl
+              bType
+                int INT[orange]
+              varDef
+                a IDENT[red]
+                = ASSIGN[blue]
+                initVal
+                  exp
+                    number
+                      0 INTEGER_CONST[green]
+        blockItem
+          stmt
+            return RETURN[orange]
+            exp
+              lVal
+                a IDENT[red]
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index -2 out of bounds for length 37
+	at Visitor.visitTerminal(Main.java:92)
+	at Visitor.visitTerminal(Main.java:48)
+	at org.antlr.v4.runtime.tree.TerminalNodeImpl.accept(TerminalNodeImpl.java:50)
+	at Visitor.visitChildren(Main.java:80)
+	at Visitor.visitChildren(Main.java:48)
+	at SysYParserBaseVisitor.visitCompUnit(SysYParserBaseVisitor.java:26)
+	at SysYParser$CompUnitContext.accept(SysYParser.java:182)
+	at Visitor.visitChildren(Main.java:80)
+	at Visitor.visitChildren(Main.java:48)
+	at SysYParserBaseVisitor.visitProgram(SysYParserBaseVisitor.java:19)
+	at SysYParser$ProgramContext.accept(SysYParser.java:128)
+	at org.antlr.v4.runtime.tree.AbstractParseTreeVisitor.visit(AbstractParseTreeVisitor.java:18)
+	at Main.main(Main.java:28)
