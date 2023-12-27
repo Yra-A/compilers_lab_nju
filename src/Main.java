@@ -88,13 +88,13 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     public Void visitTerminal(TerminalNode node) {
         Token token = node.getSymbol();
         if (token != null) {
-            int type = token.getType();
+            int type = token.getType() - 1;
             if (type >= highlightColors.length || highlightColors[type] == null) {
                 return null;
             }
             String text = token.getText();
             printIndent();
-            System.err.printf("%s %s[%s]\n", text, SysYLexer.ruleNames[type - 1], highlightColors[type]);
+            System.err.printf("%s %s[%s]\n", text, SysYLexer.ruleNames[type], highlightColors[type]);
         }
         return null;
     }
