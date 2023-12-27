@@ -60,7 +60,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
 
     private Void printIndent() {
         for (int i = 0; i < indent; i++) {
-            System.out.print("  ");
+            System.out.print(" ");
         }
         return null;
     }

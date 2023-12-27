@@ -1,2 +1,0 @@
-Error type B at Line 2:mismatched input ']' expecting {'+', '-', '!', '(', IDENT, INTEGER_CONST}
-Error type B at Line 3:mismatched input ']' expecting {'+', '-', '*', '/', '%', '[', ';'}
