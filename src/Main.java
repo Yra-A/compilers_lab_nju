@@ -19,8 +19,8 @@ public class Main {
         SysYParser sysYParser = new SysYParser(tokens);
 
         sysYParser.removeErrorListeners();
-        myErrorListener myErrorListener = new myErrorListener();
-        sysYParser.addErrorListener(myErrorListener);
+        MyErrorParserListener myErrorParserListener = new MyErrorParserListener();
+        sysYParser.addErrorListener(myErrorParserListener);
 
         ParseTree tree = sysYParser.program();
         Visitor visitor = new Visitor(sysYLexer);
@@ -28,14 +28,14 @@ public class Main {
     }
 }
 
-class myErrorListener extends BaseErrorListener {
+class MyErrorParserListener extends BaseErrorListener {
     private boolean hasError = false;
     @Override
     public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine,
             String msg, RecognitionException e)
     {
         hasError = true;
-        System.err.printf("Error type A at Line %d:%s", line, msg);
+        System.err.printf("Error type A at Line %d:%s\n", line, msg);
     }
 
     public boolean hasError() {
