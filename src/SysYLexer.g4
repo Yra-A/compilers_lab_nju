@@ -68,7 +68,7 @@ SEMICOLON : ';';
 IDENT : (LETTER | '_') WORD*;
 
 // 数字常量，包含十进制数，0开头的八进制数，0x或0X开头的十六进制数
-INTEGER_CONST : ('0' | ([1-9] DIGIT*)) | ('0' OCT*) | (('0x' | '0X') HEX*);
+INTEGER_CONST : ('0' | ([1-9] DIGIT*)) | ('0' OCT+) | (('0x' | '0X') HEX+);
 
 
 WS : [ \r\n\t]+;
