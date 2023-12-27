@@ -23,8 +23,10 @@ public class Main {
         sysYParser.addErrorListener(myErrorParserListener);
 
         ParseTree tree = sysYParser.program();
-        Visitor visitor = new Visitor(sysYLexer);
-        visitor.visit(tree);
+        if (myErrorParserListener.hasError()) {
+            Visitor visitor = new Visitor(sysYLexer);
+            visitor.visit(tree);
+        }
     }
 }
 
