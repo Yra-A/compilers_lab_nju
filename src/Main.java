@@ -69,7 +69,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     public Void visitChildren(RuleNode node) {
         String ruleName = SysYParser.ruleNames[node.getRuleContext().getRuleIndex()];
         printIndent();
-        indent += 1;
+        indent += 2;
         ruleName = ruleName.substring(0, 1).toUpperCase() + ruleName.substring(1);
         System.err.println(ruleName); // 打印正在访问的规则名称
 
@@ -80,7 +80,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
             Void childResult = c.accept(this);
             result = this.aggregateResult(result, childResult);
         }
-        indent -= 1;
+        indent -= 2;
         return result;
     }
 
