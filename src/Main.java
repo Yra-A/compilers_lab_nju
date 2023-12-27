@@ -57,9 +57,8 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     @Override
     public Void visitChildren(RuleNode node) {
         String ruleName = SysYParser.ruleNames[node.getRuleContext().getRuleIndex()];
-
-        System.err.println(ruleName + "!!!!!!!!!!!!!!!!!!!!"); // 打印正在访问的规则名称
-        return null;
+        System.err.println(ruleName); // 打印正在访问的规则名称
+        return super.visitChildren(node);
     }
 
     @Override
