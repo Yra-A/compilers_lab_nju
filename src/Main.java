@@ -93,11 +93,9 @@ class Visitor extends SysYParserBaseVisitor<Void> {
                 return null;
             }
             String text = token.getText();
-            if (text == "<EOF>") {
-                return null;
-            }
+
             printIndent();
-            System.err.printf("%s %s[%s]\n", text, SysYLexer.ruleNames[type], highlightColors[type]);
+            System.err.printf("%s %s[%s]-\n-", text, SysYLexer.ruleNames[type], highlightColors[type]);
         }
         return null;
     }
