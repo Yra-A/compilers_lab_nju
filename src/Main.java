@@ -71,6 +71,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         printIndent();
         indent += 1;
 
+        ruleName[0] = ruleName.toUpperCase();
         System.err.println(ruleName); // 打印正在访问的规则名称
 
         Void result = this.defaultResult();
