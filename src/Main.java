@@ -89,7 +89,7 @@ class Visitor extends SysYParserBaseVisitor<Void> {
         Token token = node.getSymbol();
         if (token != null) {
             int type = token.getType() - 1;
-            if (type + 1 >= highlightColors.length || highlightColors[type + 1] == null) {
+            if (type >= highlightColors.length || highlightColors[type] == null) {
                 return null;
             }
             String text = token.getText();
@@ -100,34 +100,34 @@ class Visitor extends SysYParserBaseVisitor<Void> {
     }
 
     private Void getHighlightColor(SysYLexer sysYLexer) {
-        highlightColors = new String[sysYLexer.getVocabulary().getMaxTokenType() + 1];
+        highlightColors = new String[sysYLexer.getVocabulary().getMaxTokenType()];
         //保留字
-        highlightColors[SysYLexer.CONST] = "orange";
-        highlightColors[SysYLexer.INT] = "orange";
-        highlightColors[SysYLexer.VOID] = "orange";
-        highlightColors[SysYLexer.IF] = "orange";
-        highlightColors[SysYLexer.ELSE] = "orange";
-        highlightColors[SysYLexer.WHILE] = "orange";
-        highlightColors[SysYLexer.BREAK] = "orange";
-        highlightColors[SysYLexer.CONTINUE] = "orange";
-        highlightColors[SysYLexer.RETURN] = "orange";
-        highlightColors[SysYLexer.PLUS] = "blue";
-        highlightColors[SysYLexer.MINUS] = "blue";
-        highlightColors[SysYLexer.MUL] = "blue";
-        highlightColors[SysYLexer.DIV] = "blue";
-        highlightColors[SysYLexer.MOD] = "blue";
-        highlightColors[SysYLexer.ASSIGN] = "blue";
-        highlightColors[SysYLexer.EQ] = "blue";
-        highlightColors[SysYLexer.NEQ] = "blue";
-        highlightColors[SysYLexer.LT] = "blue";
-        highlightColors[SysYLexer.GT] = "blue";
-        highlightColors[SysYLexer.LE] = "blue";
-        highlightColors[SysYLexer.GE] = "blue";
-        highlightColors[SysYLexer.NOT] = "blue";
-        highlightColors[SysYLexer.AND] = "blue";
-        highlightColors[SysYLexer.OR] = "blue";
-        highlightColors[SysYLexer.IDENT] = "red";
-        highlightColors[SysYLexer.INTEGER_CONST] = "green";
+        highlightColors[SysYLexer.CONST - 1] = "orange";
+        highlightColors[SysYLexer.INT - 1] = "orange";
+        highlightColors[SysYLexer.VOID - 1] = "orange";
+        highlightColors[SysYLexer.IF - 1] = "orange";
+        highlightColors[SysYLexer.ELSE - 1] = "orange";
+        highlightColors[SysYLexer.WHILE - 1] = "orange";
+        highlightColors[SysYLexer.BREAK - 1] = "orange";
+        highlightColors[SysYLexer.CONTINUE - 1] = "orange";
+        highlightColors[SysYLexer.RETURN - 1] = "orange";
+        highlightColors[SysYLexer.PLUS - 1] = "blue";
+        highlightColors[SysYLexer.MINUS - 1] = "blue";
+        highlightColors[SysYLexer.MUL - 1] = "blue";
+        highlightColors[SysYLexer.DIV - 1] = "blue";
+        highlightColors[SysYLexer.MOD - 1] = "blue";
+        highlightColors[SysYLexer.ASSIGN - 1] = "blue";
+        highlightColors[SysYLexer.EQ - 1] = "blue";
+        highlightColors[SysYLexer.NEQ - 1] = "blue";
+        highlightColors[SysYLexer.LT - 1] = "blue";
+        highlightColors[SysYLexer.GT - 1] = "blue";
+        highlightColors[SysYLexer.LE - 1] = "blue";
+        highlightColors[SysYLexer.GE - 1] = "blue";
+        highlightColors[SysYLexer.NOT - 1] = "blue";
+        highlightColors[SysYLexer.AND - 1] = "blue";
+        highlightColors[SysYLexer.OR - 1] = "blue";
+        highlightColors[SysYLexer.IDENT - 1] = "red";
+        highlightColors[SysYLexer.INTEGER_CONST - 1] = "green";
         return null;
     }
 }
